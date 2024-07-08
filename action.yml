@@ -1,5 +1,10 @@
 name: 'CodeLogic Java Agent'
 description: 'Scans Java artifacts into your '
+
+branding:
+  icon: 'share-2'
+  color: 'blue'
+
 inputs:
   version:
     description: 'The version of the agent docker image to use. Default is latest.'
