@@ -43,7 +43,6 @@ jobs:
 
 | Name                    | Type    | Description                                                                                                                                                                                             |
 |-------------------------|---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `version`               | String  | The version of the agent docker image to use. Default is latest.                                                                                                                                        |
 | `codelogic_host`        | String  | The host address of the CodeLogic instance without the "/codelogic/ui/" part.                                                                                                                           |
 | `agent_uuid`            | String  | The UUID of the Agent in CodeLogic.                                                                                                                                                                     |
 | `agent_password`        | String  | The password for the agent.                                                                                                                                                                             |
@@ -54,7 +53,7 @@ jobs:
 | `recursive_filter`      | String  | A comma-separated list of substrings to key off of to trigger recursive analysis (jar within jar).                                                                                                      |
 | `method_filter`         | String  | A comma-separated list of Java package prefixes that should be included in method-invokes-method relationships.                                                                                         |
 | `database_identities`   | String  | A comma-separated list of database identities to use in the creation of relationships.                                                                                                                  |
-| `force_rescan`          | boolean | Forces jCape to rescan already scanned artifacts. Defaults to false.                                                                                                                                    |
+| `force_rescan`          | boolean | Forces the agent to rescan already scanned artifacts. Defaults to false.                                                                                                                                |
 | `expunge_scan_sessions` | boolean | Instruct the server to delete all other scan sessions created by this agent and its configuration after the current scan session has completed successfully. Defaults to false.                         |
 | `java_opts`             | String  | Java options to pass to the java command.                                                                                                                                                               |
 
