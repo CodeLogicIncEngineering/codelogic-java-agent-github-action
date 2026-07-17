@@ -24,7 +24,7 @@ jobs:
       - name: Check out the repo
         uses: actions/checkout@v4
       - name: Run the CodeLogic Scan
-        uses: CodeLogicIncEngineering/codelogic-java-agent-github-action@master
+        uses: CodeLogicIncEngineering/codelogic-java-agent-github-action@v1
         with:
           codelogic_host: ${{ vars.CODELOGIC_HOST }}
           agent_uuid: ${{ secrets.AGENT_UUID }}
